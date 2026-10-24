@@ -12,49 +12,54 @@ on:
 
 jobs:
   run_job:
-    runs-on: ubuntu-latest
-    
+    runs-on: ubuntu-24.04
+
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v2
-      
+      uses: actions/checkout@v4
+
     - name: Set up Python
-      uses: actions/setup-python@v2
+      uses: actions/setup-python@v5
       with:
         python-version: '3.10'
-        
+
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        
+
     - name: Run Python script
       run: python assets/freetv/freetv.py
-          
+
     - name: Commit changes
       run: |
-          git config --local user.email "actions@github.com"
-          git config --local user.name "GitHub Actions"
-          git add assets/freetv/freetv_output.txt
-          git add assets/freetv/freetv_output_cctv.txt
-          git add assets/freetv/freetv_output_ws.txt
-          git add assets/freetv/freetv_output_other.txt
+        git config --local user.email "actions@github.com"
+        git config --local user.name "GitHub Actions"
+
+        # 1) 数据文件：有变更才提交，无变更不报错
+        git add assets/freetv/freetv_output.txt assets/freetv/freetv_output_cctv.txt assets/freetv/freetv_output_ws.txt assets/freetv/freetv_output_other.txt
+        if git diff --cached --quiet; then
+          echo "freetv 数据文件无变更，跳过数据提交"
+        else
           git commit -m ":tv:  (Freetv)AutoUpdate $(date -d "+8 hours" +'%Y%m%d')"
+        fi
 
-          current_datetime=$(date +"%Y%m%d_%H%M%S")
-          # cp assets/freetv/freetv_output.txt history/freetv/"${current_datetime}_freetv_output.txt"
-          # git add history/freetv/"${current_datetime}_freetv_output.txt"
-          # git commit -m "(freetv)Archive file with timestamp"
-
-          # 将归档文件打包zip文件
-          zip_filename="${current_datetime}_freetv_output.zip"
-          zip "history/freetv/${zip_filename}" assets/freetv/freetv_output.txt
+        # 2) 归档 zip：生成并提交，同样做无变更保护
+        current_datetime=$(date +"%Y%m%d_%H%M%S")
+        zip_filename="${current_datetime}_freetv_output.zip"
+        mkdir -p history/freetv
+        if [ -f assets/freetv/freetv_output.txt ]; then
+          zip "history/freetv/${zip_filename}" assets/freetv/freetv_output.txt 2>/dev/null || true
           git add "history/freetv/${zip_filename}"
-          git commit -m "(freetv) Archive file as ZIP with timestamp"
-          
-          
+          if git diff --cached --quiet; then
+            echo "freetv zip 无变更，跳过归档提交"
+          else
+            git commit -m "(freetv) Archive file as ZIP with timestamp"
+          fi
+        else
+          echo "freetv_output.txt 不存在，跳过归档"
+        fi
+
     - name: Push changes
       uses: ad-m/github-push-action@master
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-    
-        
