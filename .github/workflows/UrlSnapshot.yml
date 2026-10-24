@@ -12,41 +12,48 @@ on:
 
 jobs:
   run_job:
-    runs-on: ubuntu-latest
-    
+    runs-on: ubuntu-24.04
+
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v2
-      
+      uses: actions/checkout@v4
+
     - name: Set up Python
-      uses: actions/setup-python@v2
+      uses: actions/setup-python@v5
       with:
         python-version: '3.10'
-        
+
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
         pip install requests
-        
+
     - name: Run Python script
       run: python assets/snapshot/snapshot.py
-          
+
     - name: Commit changes
       run: |
-          git config --local user.email "actions@github.com"
-          git config --local user.name "GitHub Actions"
+        git config --local user.email "actions@github.com"
+        git config --local user.name "GitHub Actions"
 
-          # 将归档文件打包zip文件
-          current_date=$(date +%Y-%m-%d)
-          current_datetime=$(date +"%Y%m%d_%H%M")
-          zip_filename="${current_datetime}_UrlSnapshot.zip"
-          zip -r "assets/snapshot/${zip_filename}" "assets/snapshot/${current_date}"
+        # 归档 snapshot 为 zip，有变更才提交
+        current_date=$(date +%Y-%m-%d)
+        current_datetime=$(date +"%Y%m%d_%H%M")
+        zip_filename="${current_datetime}_UrlSnapshot.zip"
+        mkdir -p assets/snapshot
+        if [ -d "assets/snapshot/${current_date}" ]; then
+          zip -r "assets/snapshot/${zip_filename}" "assets/snapshot/${current_date}" 2>/dev/null || true
           git add "assets/snapshot/${zip_filename}"
-          git commit -m "(UrlSnapshot) archive snapshot file"          
-          
+          if git diff --cached --quiet; then
+            echo "urlSnapshot zip 无变更，跳过归档提交"
+          else
+            git commit -m "(UrlSnapshot) archive snapshot file"
+          fi
+        else
+          echo "snapshot 目录不存在，跳过归档"
+        fi
+
     - name: Push changes
       uses: ad-m/github-push-action@master
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-    
-        
