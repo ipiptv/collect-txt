@@ -12,25 +12,25 @@ on:
 
 jobs:
   run_job:
-    runs-on: ubuntu-latest
-    
+    runs-on: ubuntu-24.04
+
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v2
-      
+      uses: actions/checkout@v4
+
     - name: Set up Python
-      uses: actions/setup-python@v2
+      uses: actions/setup-python@v5
       with:
         python-version: '3.10'
-        
+
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
         pip install opencc-python-reimplemented
-        
+
     - name: Run Python script
       run: python main.py
-      
+
     - name: Upload generated files
       uses: actions/upload-artifact@v4
       with:
@@ -39,30 +39,37 @@ jobs:
           bbxx365.txt
           others_output.txt
           work/*.txt
-          
+
     - name: Commit changes
       run: |
-          git config --local user.email "actions@github.com"
-          git config --local user.name "GitHub Actions"
-          git add bbxx365.txt bbxx365.m3u bbxx365_lite.txt bbxx365_lite.m3u others_output.txt tiyu.html work/*.txt
+        git config --local user.email "actions@github.com"
+        git config --local user.name "GitHub Actions"
+
+        # 1) 数据文件：有变更才提交，无变更不报错
+        git add bbxx365.txt bbxx365.m3u bbxx365_lite.txt bbxx365_lite.m3u others_output.txt tiyu.html work/*.txt
+        if git diff --cached --quiet; then
+          echo "数据文件无变更，跳过数据提交"
+        else
           git commit -m ":tada:  AutoUpdate $(date +'%Y%m%d')"
+        fi
 
-          current_datetime=$(date +"%Y%m%d_%H%M%S")
-          # cp merged_output.txt history/"${current_datetime}_merged_output.txt"
-          # cp others_output.txt history/"${current_datetime}_others_output.txt"
-          # git add history/"${current_datetime}_merged_output.txt"
-          # git add history/"${current_datetime}_others_output.txt"
-          # git commit -m "Archive file with timestamp"
-
-          # 将归档文件打包zip文件
-          zip_filename="history/${current_datetime}_archive_output.zip"
-          zip -j "${zip_filename}" others_output.txt
+        # 2) 归档 zip：生成并提交，同样做无变更保护
+        current_datetime=$(date +"%Y%m%d_%H%M%S")
+        zip_filename="history/${current_datetime}_archive_output.zip"
+        mkdir -p history
+        if [ -f others_output.txt ]; then
+          zip -j "${zip_filename}" others_output.txt 2>/dev/null || true
           git add "${zip_filename}"
-          git commit -m "Archive zipfile: ${current_datetime}"
-          
+          if git diff --cached --quiet; then
+            echo "zip 无变更，跳过归档提交"
+          else
+            git commit -m "Archive zipfile: ${current_datetime}"
+          fi
+        else
+          echo "others_output.txt 不存在，跳过归档"
+        fi
+
     - name: Push changes
       uses: ad-m/github-push-action@master
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-    
-        
