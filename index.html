@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPTV 直播源</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #0f172a;
+            color: #e2e8f0;
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h1 {
+            text-align: center;
+            margin: 30px 0 10px;
+            font-size: 28px;
+        }
+        .subtitle {
+            text-align: center;
+            color: #94a3b8;
+            margin-bottom: 40px;
+            font-size: 14px;
+        }
+        .card {
+            background: #1e293b;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 16px;
+            border: 1px solid #334155;
+        }
+        .card-title {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #38bdf8;
+        }
+        .card-desc {
+            color: #94a3b8;
+            font-size: 13px;
+            margin-bottom: 12px;
+        }
+        .url {
+            background: #0f172a;
+            padding: 12px;
+            border-radius: 8px;
+            font-family: monospace;
+            font-size: 12px;
+            word-break: break-all;
+            color: #4ade80;
+            border: 1px solid #334155;
+        }
+        .badge {
+            display: inline-block;
+            background: #22c55e;
+            color: white;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 11px;
+            margin-left: 8px;
+        }
+        .badge-orange {
+            background: #f97316;
+        }
+    </style>
+</head>
+<body>
+    <h1>📺 IPTV 直播源</h1>
+    <p class="subtitle">每日自动更新 · 纯净版已测速</p>
+
+    <div class="card">
+        <div class="card-title">✨ 纯净版（推荐） <span class="badge">已测速</span></div>
+        <div class="card-desc">用本地网络测过，剩下的都能播放</div>
+        <div class="url" id="chunjingban"></div>
+    </div>
+
+    <div class="card">
+        <div class="card-title">📺 央视</div>
+        <div class="card-desc">CCTV 系列频道 <span class="badge badge-orange">未测速</span></div>
+        <div class="url" id="cctv"></div>
+    </div>
+
+    <div class="card">
+        <div class="card-title">📡 卫视</div>
+        <div class="card-desc">各省级卫视 <span class="badge badge-orange">未测速</span></div>
+        <div class="url" id="weishi"></div>
+    </div>
+
+    <div class="card">
+        <div class="card-title">🌏 港澳台</div>
+        <div class="card-desc">香港、澳门、台湾频道 <span class="badge badge-orange">未测速</span></div>
+        <div class="url" id="gangaotai"></div>
+    </div>
+
+    <div class="card">
+        <div class="card-title">⚽ 体育</div>
+        <div class="card-desc">体育频道 <span class="badge badge-orange">未测速</span></div>
+        <div class="url" id="sports"></div>
+    </div>
+
+    <div class="card">
+        <div class="card-title">🎬 电影</div>
+        <div class="card-desc">电影频道 <span class="badge badge-orange">未测速</span></div>
+        <div class="url" id="movie"></div>
+    </div>
+
+    <div class="card">
+        <div class="card-title">📺 电视剧</div>
+        <div class="card-desc">电视剧频道 <span class="badge badge-orange">未测速</span></div>
+        <div class="url" id="tvshow"></div>
+    </div>
+
+    <div class="card">
+        <div class="card-title">🎨 动画片</div>
+        <div class="card-desc">少儿动画频道 <span class="badge badge-orange">未测速</span></div>
+        <div class="url" id="cartoon"></div>
+    </div>
+
+    <div class="card">
+        <div class="card-title">🎥 4K</div>
+        <div class="card-desc">4K 超高清频道 <span class="badge badge-orange">未测速</span></div>
+        <div class="url" id="4k"></div>
+    </div>
+
+    <script>
+        const base = window.location.origin;
+        document.getElementById('chunjingban').textContent = base + '/chunjingban.m3u';
+        document.getElementById('cctv').textContent = base + '/cctv.m3u';
+        document.getElementById('weishi').textContent = base + '/weishi.m3u';
+        document.getElementById('gangaotai').textContent = base + '/gangaotai.m3u';
+        document.getElementById('sports').textContent = base + '/sports.m3u';
+        document.getElementById('movie').textContent = base + '/movie.m3u';
+        document.getElementById('tvshow').textContent = base + '/tvshow.m3u';
+        document.getElementById('cartoon').textContent = base + '/cartoon.m3u';
+        document.getElementById('4k').textContent = base + '/4k.m3u';
+    </script>
+</body>
+</html>
