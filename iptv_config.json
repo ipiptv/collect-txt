@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "纯净版（推荐）",
+    "url": "https://cdn.jsdelivr.net/gh/ipiptv/collect-txt@main/chunjingban.m3u",
+    "note": "已测速 · 每日更新",
+    "tested": true
+  },
+  {
+    "id": 2,
+    "name": "央视",
+    "url": "https://cdn.jsdelivr.net/gh/ipiptv/collect-txt@main/cctv.m3u",
+    "note": "CCTV 系列",
+    "tested": false
+  },
+  {
+    "id": 3,
+    "name": "卫视",
+    "url": "https://cdn.jsdelivr.net/gh/ipiptv/collect-txt@main/weishi.m3u",
+    "note": "各省级卫视",
+    "tested": false
+  },
+  {
+    "id": 4,
+    "name": "港澳台",
+    "url": "https://cdn.jsdelivr.net/gh/ipiptv/collect-txt@main/gangaotai.m3u",
+    "note": "香港、澳门、台湾",
+    "tested": false
+  },
+  {
+    "id": 5,
+    "name": "酒店源",
+    "url": "https://iptv-4us.pages.dev/hotel_tvn.m3u",
+    "note": "酒店源 · 每日更新",
+    "tested": false
+  },
+  {
+    "id": 6,
+    "name": "4K",
+    "url": "https://cdn.jsdelivr.net/gh/ipiptv/collect-txt@main/4k.m3u",
+    "note": "超高清",
+    "tested": false
+  }
+]
