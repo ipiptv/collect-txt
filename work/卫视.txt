@@ -3634,7 +3634,7 @@
 河南卫视,http://1.94.31.214/php/hntv.php?id=hnws
 河南卫视,http://39.135.133.163/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226480/index.m3u8
 河南卫视,http://home.wwang.pw:35455/itv/1000000002000027731.m3u8?cdn=ystenlive
-河南卫视,http://tvcdn.stream3.hndt.com/tv/65c4a6d5017e1000b2b6ea2500000000_transios/playlist.m3u8?wsSecret=820d13ef2a37542eda24e92ab3fa6d56&wsTime=1793196280
+河南卫视,http://tvcdn.stream3.hndt.com/tv/65c4a6d5017e1000b2b6ea2500000000_transios/playlist.m3u8?wsSecret=1088eb22471121e90e873bd89a64f66b&wsTime=1793199890
 河南卫视,http://hlsztemgsplive.miguvideo.com:8080/wd-henanwssd-600/index.m3u8?msisdn=20261028180259dcd9a21fe7ca453db3c987263d1b93a0&mdspid=&spid=600633&netType=0&sid=5910021585&pid=2028597139&timestamp=20261028180259&Channel_ID=0116_2600000900-99000-201600010010027&ProgramID=790187291&ParentNodeID=-99&assertID=5910021585&client_ip=171.8.79.254&SecurityKey=20261028180259&promotionId=&mvid=5900005706&mcid=500020&playurlVersion=WX-A1-9.10.1-SNAPSHOT&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&encrypt=f015ab7573ec5cc65db89be4e683b97e
 河南卫视,http://e1.woc.iiiya.cn:8888/rtp/239.61.2.59:8348
 河南卫视,http://113.57.111.4:1111/tsfile/live/1025_1.m3u8
