@@ -815,7 +815,6 @@
 安徽卫视,http://116.77.33.98:44330/tsfile/live/0130_1.m3u8?key=txiptv&playlive=0&authid=0
 安徽卫视,http://124.90.45.52:9901/tsfile/live/0130_1.m3u8?key=txiptv&playlive=1&authid=0
 安徽卫视,http://45.192.97.170:8880/play/120.m3u8
-安徽卫视,http://gmxw.7766.org:808/hls/40/index.m3u8
 安徽卫视,http://101.35.240.114:88/live.php?id=安徽卫视
 安徽卫视,http://60.174.40.117:85/tsfile/live/1019_1.m3u8?key=txiptv
 安徽卫视,http://221.226.4.10:85/tsfile/live/0130_1.m3u8?key=txiptv
@@ -1281,8 +1280,8 @@
 云南卫视,http://111.61.236.247:9081/hls/32/index.m3u8
 云南卫视,rtsp://180.95.143.19/PLTV/88888910/224/3221225554/10000100000000060000000000107334_0.smil
 人间卫视,https://www.youtube.com/watch?v=SyWDqvV5ajY
-人间卫视,https://5ddce30eb4b55.streamlock.net/bltvhd/bltv1/chunklist_w511254805.m3u8
 人间卫视,http://61.216.67.119:1935/bltvhd/bltv1/chunklist_w1266569526.m3u
+人间卫视,https://5ddce30eb4b55.streamlock.net/bltvhd/bltv1/chunklist_w511254805.m3u8
 人间卫视,http://61.216.67.119:1935/bltvhd/bltv1/chunklist_w1266569526.m3u8
 人间卫视,https://5ddce30eb4b55.streamlock.net/bltvhd/bltv1/playlist.m3u8
 人间卫视,https://stream1.freetv.fun/ren-jian-wei-shi-8.m3u8
@@ -2119,9 +2118,9 @@
 天津卫视,http://116.77.33.98:44330/tsfile/live/0135_1.m3u8?key=txiptv&playlive=0&authid=0
 天津卫视,http://124.90.45.52:9901/tsfile/live/0135_1.m3u8?key=txiptv&playlive=1&authid=0
 天津卫视,http://45.192.97.170:8880/play/123.m3u8
+天津卫视,http://222.169.85.8:9901/tsfile/live/0135_1.m3u8?key=txiptv&playlive=1&authid=0
 天津卫视,http://101.35.240.114:88/live.php?id=天津卫视
 天津卫视,http://153.0.171.163:9901/tsfile/live/0135_1.m3u8?key=txiptv&playlive=1&authid=0
-天津卫视,http://222.169.85.8:9901/tsfile/live/0135_1.m3u8?key=txiptv&playlive=1&authid=0
 天津卫视,http://60.174.40.117:85/tsfile/live/1027_1.m3u8?key=txiptv
 天津卫视,http://221.226.4.10:85/tsfile/live/1014_1.m3u8?key=txiptv
 天津卫视,http://36.136.38.87:9901/tsfile/live/0135_1.m3u8?key=txiptv&playlive=1&authid=0
@@ -2769,7 +2768,7 @@
 广东卫视,http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226961/1.m3u8?GuardEncType=2&accountinfo=%7E%7EV2.0%7E2MGyx659D_aaDPP0qt3NgA%7EtP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY%2CEND
 广东卫视,http://39.135.133.177/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226248/index.m3u8
 广东卫视,http://home.wwang.pw:35455/itv/1000000005000265034.m3u8?cdn=ystenlive
-广东卫视,http://hlsztemgsplive.miguvideo.com:8080/ws_w/2018/gdws/gdws711/1000/index.m3u8?msisdn=20261029040254b94176111c9149238adaa85bbb44e217&mdspid=&spid=699054&netType=0&sid=2202428795&pid=2028597139&timestamp=20261029040254&Channel_ID=0116_2600000900-99000-201600010010027&ProgramID=608831231&ParentNodeID=-99&assertID=2202428795&client_ip=171.8.79.254&SecurityKey=20261029040254&promotionId=&mvid=2202428795&mcid=500020&playurlVersion=WX-A1-9.10.1-SNAPSHOT&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&encrypt=d5f354757a4d6b2475aa9ea42afec91b
+广东卫视,http://hlsztemgsplive.miguvideo.com:8080/ws_w/2018/gdws/gdws711/1000/index.m3u8?msisdn=202610290802549e324d6c820842cb91ed5055b4a075dd&mdspid=&spid=699054&netType=0&sid=2202428795&pid=2028597139&timestamp=20261029080254&Channel_ID=0116_2600000900-99000-201600010010027&ProgramID=608831231&ParentNodeID=-99&assertID=2202428795&client_ip=171.8.79.254&SecurityKey=20261029080254&promotionId=&mvid=2202428795&mcid=500020&playurlVersion=WX-A1-9.10.1-SNAPSHOT&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&encrypt=3010f2ca113f1924d76ba6f8815f630d
 广东卫视,http://1b6467f415.iok.la:9931/tsfile/live/1010_1.m3u8
 广东卫视,http://e1.woc.iiiya.cn:8888/rtp/239.61.2.33:8192
 广东卫视,http://113.57.111.4:1111/tsfile/live/1022_1.m3u8
@@ -3662,7 +3661,7 @@
 河南卫视,http://1.94.31.214/php/hntv.php?id=hnws
 河南卫视,http://39.135.133.163/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226480/index.m3u8
 河南卫视,http://home.wwang.pw:35455/itv/1000000002000027731.m3u8?cdn=ystenlive
-河南卫视,http://tvcdn.stream3.hndt.com/tv/65c4a6d5017e1000b2b6ea2500000000_transios/playlist.m3u8?wsSecret=4132633b67954a22695610897476d286&wsTime=1793243090
+河南卫视,http://tvcdn.stream3.hndt.com/tv/65c4a6d5017e1000b2b6ea2500000000_transios/playlist.m3u8?wsSecret=35561cafb8fb68ac05e2b0d7718388d6&wsTime=1793246605
 河南卫视,http://hlsztemgsplive.miguvideo.com:8080/wd-henanwssd-600/index.m3u8?msisdn=20261029060259af69242cf00548bc8c982881f2d0113c&mdspid=&spid=600633&netType=0&sid=5910021585&pid=2028597139&timestamp=20261029060259&Channel_ID=0116_2600000900-99000-201600010010027&ProgramID=790187291&ParentNodeID=-99&assertID=5910021585&client_ip=171.8.79.254&SecurityKey=20261029060259&promotionId=&mvid=5900005706&mcid=500020&playurlVersion=WX-A1-9.10.1-SNAPSHOT&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&encrypt=a2750c3cf16649690d13b3ecf84274b1
 河南卫视,http://e1.woc.iiiya.cn:8888/rtp/239.61.2.59:8348
 河南卫视,http://113.57.111.4:1111/tsfile/live/1025_1.m3u8
@@ -3943,7 +3942,6 @@
 深圳卫视,http://204.12.221.218:8181/3m1080p/szws.m3u8
 深圳卫视,http://124.90.45.52:9901/tsfile/live/0126_1.m3u8?key=txiptv&playlive=1&authid=0
 深圳卫视,http://45.192.97.170:8880/play/113.m3u8
-深圳卫视,http://gmxw.7766.org:808/hls/45/index.m3u8
 深圳卫视,http://101.35.240.114:88/live.php?id=深圳卫视4K
 深圳卫视,http://101.35.240.114:88/live.php?id=深圳卫视
 深圳卫视,http://120.238.94.82:9901/tsfile/live/1065_1.m3u8
@@ -4302,8 +4300,8 @@
 甘肃卫视,https://zby.130519.xyz/PLTV/11/224/3221226090/index.m3u8
 甘肃卫视,http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221227020/1.m3u8?GuardEncType=2&accountinfo=%7E%7EV2.0%7Err-CLugPnTcUinEM8JeySg%7EtP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY%2CEND
 甘肃卫视,http://204.12.221.218:8181/3m1080p/gsws.m3u8
-甘肃卫视,http://218.13.170.98:9901/tsfile/live/0141_1.m3u8
 甘肃卫视,http://101.35.240.114:88/live.php?id=甘肃卫视
+甘肃卫视,http://218.13.170.98:9901/tsfile/live/0141_1.m3u8
 甘肃卫视,http://60.174.40.117:85/tsfile/live/0141_1.m3u8?key=txiptv
 甘肃卫视,http://218.1.217.21:9901/tsfile/live/0113_1.m3u8?y=txiptv
 甘肃卫视,http://t.061899.xyz/tl/tl.php?id=gsws
@@ -4669,9 +4667,10 @@
 辽宁卫视,http://124.90.45.52:9901/tsfile/live/0121_1.m3u8?key=txiptv&playlive=1&authid=0
 辽宁卫视,http://45.192.97.170:8880/play/119.m3u8
 辽宁卫视,http://45.192.97.170:8880/play/33.m3u8
-辽宁卫视,http://61.136.172.236:9901/tsfile/live/0121_1.m3u8?key=txiptv&playlive=1&authid=0
+辽宁卫视,https://piccpndks.v.kcdnvip.com/audio/liaoning_2/index.m3u8
 辽宁卫视,http://gslbmgsplive.miguvideo.com/wd_r2/2018/ocn/liaoningwshd/2000/index.m3u8?msisdn=28786ac02e805d32b5da4857f0cd9ae7&mdspid=&spid=600572&netType=0&sid=5910022198&pid=2028597139&timestamp=20261021115038&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=630291707&ParentNodeID=-99&assertID=5910022198&client_ip=39.103.182.111&SecurityKey=20261021115038&promotionId=&mvid=5101043014&mcid=500020&playurlVersion=WX-A1-9.10.1-SNAPSHOT&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=b21345cc5451ced25f58c7c3f9de782d&ddCalcu=db22v81a73xe4ad59cfc35c475c18c5efd52&sv=10004&ct=android
 辽宁卫视,http://101.35.240.114:88/live.php?id=辽宁卫视
+辽宁卫视,http://61.136.172.236:9901/tsfile/live/0121_1.m3u8?key=txiptv&playlive=1&authid=0
 辽宁卫视,http://hlsztemgsplive.miguvideo.com:8080/wd_r2/2018/ocn/liaoningwshd/1000/index.m3u8?msisdn=20261028220258156a992184d8499980f6852bd465a0a7&mdspid=&spid=600572&netType=0&sid=5910022198&pid=2028597139&timestamp=20261028220258&Channel_ID=0116_2600000900-99000-201600010010027&ProgramID=630291707&ParentNodeID=-99&assertID=5910022198&client_ip=171.8.79.254&SecurityKey=20261028220258&promotionId=&mvid=5101043014&mcid=500020&playurlVersion=WX-A1-9.10.1-SNAPSHOT&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&encrypt=bcac087e156c3b3fac23727ed2e3bfaf
 辽宁卫视,http://112.103.141.123:1234/630291707
 辽宁卫视,http://gslbmgsplive.miguvideo.com/wd_r2/2018/ocn/liaoningwshd/1000/index.m3u8?msisdn=202610290641532808bc429d2644a8bac5b026e04acfd4&mdspid=&spid=600572&netType=0&sid=5910022198&pid=2028597139&timestamp=20261029064153&Channel_ID=0116_2600000900-99000-201600010010027&ProgramID=630291707&ParentNodeID=-99&assertID=5910022198&client_ip=2409:8a00:6030:db21:93bb:416b:7d15:e416&SecurityKey=20261029064153&promotionId=&mvid=5101043014&mcid=500020&playurlVersion=WX-A1-9.10.1-SNAPSHOT&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=7f84878814a671a2286b0a88c71cdf5e&ddCalcu=e75fef82d40c801778c88184aa06b7618a22
@@ -4842,7 +4841,6 @@
 重庆卫视,http://116.77.33.98:44330/tsfile/live/0142_1.m3u8?key=txiptv&playlive=0&authid=0
 重庆卫视,http://124.90.45.52:9901/tsfile/live/0142_1.m3u8?key=txiptv&playlive=1&authid=0
 重庆卫视,http://45.192.97.170:8880/play/112.m3u8
-重庆卫视,http://p2.ioioz.com/videojs.php?id=https://sjlivecdn9.cbg.cn/202610290106/app_2/_definst_/ls_2.stream/chunklist.m3u8
 重庆卫视,http://gslbmgsplive.miguvideo.com/envivo_x/2018/SD/chongqing/1000/index.m3u8?msisdn=3968f336d8fc13de484890615176fd83&mdspid=&spid=600697&netType=0&sid=5910022305&pid=2028597139&timestamp=20261021115044&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=738910914&ParentNodeID=-99&assertID=5910022305&client_ip=39.103.188.159&SecurityKey=20261021115044&promotionId=&mvid=5900004329&mcid=500020&playurlVersion=WX-A1-9.10.1-SNAPSHOT&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=177e6572cc96bee06b9914fd230193ac&ddCalcu=c1a7v37a9el16a053722dcfc49169b9ebe60&sv=10004&ct=android
 重庆卫视,http://101.35.240.114:88/live.php?id=重庆卫视
 重庆卫视,http://hlsztemgsplive.miguvideo.com:8080/envivo_x/2018/SD/chongqing/1000/index.m3u8?msisdn=20261027220300509cc4d7123a4b46b1d1973891f1bd14&mdspid=&spid=600697&netType=0&sid=5910022305&pid=2028597139&timestamp=20261027220300&Channel_ID=0116_2600000900-99000-201600010010027&ProgramID=738910914&ParentNodeID=-99&assertID=5910022305&client_ip=171.8.79.254&SecurityKey=20261027220300&promotionId=&mvid=5900004329&mcid=500020&playurlVersion=WX-A1-9.10.1-SNAPSHOT&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&encrypt=fc258b5f21558f25a8c3e4bc04a9aa68
